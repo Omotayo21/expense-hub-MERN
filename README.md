@@ -45,7 +45,7 @@ This is a Expense Tracker app built with React.js, expressjs, Mongoose, MongoDB,
 
 5. **Open in Browser:**
 
-Open http://localhost:3000 in your browser.
+Open http://localhost:5173 in your browser.
 
 ## Folder Structure
 src/: Source code of the application.

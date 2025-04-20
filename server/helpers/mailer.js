@@ -42,7 +42,7 @@ exports.sendEmail = async ({email, emailType, userId}) => {
        emailType === "VERIFY" ? "verifyEmail" : "resetpassword"
      }?token=${hashedToken}" style="background-color: #008000; color: #fafafa; padding: 10px 20px; border-radius: 5px; text-decoration: none;">Verify Email Address</a></p>
     <p style="color: #737373; margin-bottom: 15px;">Alternatively, you can copy and paste the following link into your browser:</p>
-    <p style="color: #737373; margin-bottom: 15px;"> ${process.env.DOMAIN}/${
+    <p style="color: #737373; margin-bottom: 15px;"> https://expense-hub-mern-nine.vercel.app/}/${
        emailType === "VERIFY" ? "verifyEmail" : "resetpassword"
      }?
      token=${hashedToken}</p>

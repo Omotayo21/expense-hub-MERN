@@ -38,9 +38,7 @@ exports.sendEmail = async ({email, emailType, userId}) => {
     <h1 style="color: #008000; margin-bottom: 20px;">Welcome to Expense Hub!</h1>
     <p style="color: #737373; margin-bottom: 15px;">Greetings from Expense Hub! </p>
     <p style="color: #737373; margin-bottom: 15px;">To complete your registration, please click on the button below to verify your email address:</p>
-    <p style="text-align: center; margin-bottom: 20px;"><a href="${
-      process.env.DOMAIN
-    }/${
+    <p style="text-align: center; margin-bottom: 20px;"><a href="https://expense-hub-mern-nine.vercel.app/${
        emailType === "VERIFY" ? "verifyEmail" : "resetpassword"
      }?token=${hashedToken}" style="background-color: #008000; color: #fafafa; padding: 10px 20px; border-radius: 5px; text-decoration: none;">Verify Email Address</a></p>
     <p style="color: #737373; margin-bottom: 15px;">Alternatively, you can copy and paste the following link into your browser:</p>
